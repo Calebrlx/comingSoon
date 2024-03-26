@@ -19,6 +19,7 @@ export async function POST(request: Request) {
         }
   
         // Here, implement your logic to handle the email, e.g., storing it in a database
+        console.log(email)
   
         // Respond with a success message
         return new Response(JSON.stringify({ message: 'Email successfully submitted!' }), {
