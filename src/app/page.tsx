@@ -72,9 +72,9 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className=''>
-          <p className=''>
-            Copyright © 2023 | A product of &nbsp;<a target="_blank" class="no-underline md:underline" href="https://relix.ai">Relix Co</a>
+        <div>
+          <p>
+            Copyright © 2023 | A product of &nbsp;<a target="_blank" className="no-underline md:underline" href="https://relix.ai">Relix Co</a>
           </p>
 
         </div>
