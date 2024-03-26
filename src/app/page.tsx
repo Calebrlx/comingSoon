@@ -29,7 +29,7 @@ export default function Home() {
           Coming Soon<span className='ml-2 text-indigo-600'>⏳</span>
         </h1>
         <p className='mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-xl'>
-          We're preparing something exciting. An innovative project that blends AI with innovation. Stay tuned.
+          We&apos;re preparing something exciting. An innovative project that blends AI with innovation. Stay tuned.
         </p>
       </div>
 
