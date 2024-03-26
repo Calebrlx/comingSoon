@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:p-12">
-      <div className="z-10 w-full max-w-5xl items-center justify-between text-sm ">
+      {/* <div className="z-10 w-full max-w-5xl items-center justify-between text-sm ">
 
         <div className=" bottom-0 left-0 flex h-30 md:h-48 w-full items-end justify-center  lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className="relative flex flex-col  place-items-center ">
         <h2 className='text-center font-heading m-10 text-6xl sm:text-7xl lg:text-8xl leading-[5rem] sm:leading-[7rem] lg:leading-[7rem] font-black	 '>
@@ -65,17 +65,16 @@ export default function Home() {
         <div className='my-4 text-center' >
           <ul className='flex flex-wrap lg:flex justify-center '>
             <li className='px-2'> Connect With Us </li>
-            {socialIcons.map((social, index) =>
-            (
+            {socialIcons.map((social, index) => (
               <li key={index} className='px-2 capitalize border-1  hover:border-b-white'>
                 <a target='_blank' className='' href={social.link}> {social.icon}  </a>
               </li>
-            )
-            )}
+            ))}
           </ul>
         </div>
         <div className=''>
-          <p className='' dangerouslySetInnerHTML={{ __html: 'Copyright © 2023 | A product of &nbsp;<a target="_blank" class="no-underline md:underline" href="https://relix.ai">Relix Co</a>' }}>
+          <p className=''>
+            Copyright © 2023 | A product of &nbsp;<a target="_blank" class="no-underline md:underline" href="https://relix.ai">Relix Co</a>
           </p>
 
         </div>
