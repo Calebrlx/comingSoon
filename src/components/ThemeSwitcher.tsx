@@ -26,11 +26,15 @@ export const ThemeSwitcher = () => {
         className="text-slate-500 p-2 bg rounded-full border-slate-50	"
         onClick={() => { currentTheme === "light" ? setTheme("dark") : setTheme("light") }}>
         {/* { currentTheme === "light" ? "DARK" : "LIGHT" } */}
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="10" fill="white">
             <animate attributeName="r" from="10" to="10" dur="1s" repeatCount="indefinite" />
             <animate attributeName="fill" values="white;black;white" dur="1s" repeatCount="indefinite" />
           </circle>
+        </svg> */}
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="12" height="24" fill="black" />
+          <rect x="12" y="0" width="12" height="24" fill="white" />
         </svg>
       </button>
       {/* {currentTheme === "light" ? (

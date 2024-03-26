@@ -6,7 +6,6 @@ import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const currentYear = new Date().getFullYear()
   const socialIcons = [
     {
       icon: "facebook",
@@ -23,57 +22,44 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:p-12">
-      {/* <div className="z-10 w-full max-w-5xl items-center justify-between text-sm ">
-        <div className=" bottom-0 left-0 flex h-30 md:h-48 w-full items-end justify-center  lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a className="pointer-events-none flex place-items-center gap-2 p-4 lg:pointer-events-auto lg:p-0" href="/" rel="noopener noreferrer">
-            <div className='flex flex-col text-center'>
-              <h1 className='text-2xl lgtext-4xl text-sky-400/100 font-semibold	'> Relix </h1>
-              <p className='text-2 font-medium m-2 text-slate-800 dark:text-slate-100'>AI meets innovation</p>
-            </div>
-          </a>
-        </div>
-      </div> */}
+    <main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white dark:bg-gray-900">
 
-      <div className="relative flex flex-col  place-items-center">
-        <h2 className='text-center font-heading m-10 text-6xl sm:text-7xl lg:text-8xl leading-[5rem] sm:leading-[7rem] lg:leading-[7rem] font-black'>
-          <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Comming Soon</span>
-          <span>⏳</span>
-        </h2>
-        <p className='text-2xl md:text-3xl px-6 max-w-3xl text-center m-5 text-slate-800 dark:text-slate-100 font-thin'>
-          Our team is hard at work preparing something exciting for you. Stay tuned for an innovative project that aims to redefine the intersection of AI and innovation.
+      <div className="flex flex-col items-center">
+        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 dark:text-white text-center leading-none'>
+          Coming Soon<span className='ml-2 text-indigo-600'>⏳</span>
+        </h1>
+        <p className='mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-xl'>
+          We're preparing something exciting. An innovative project that blends AI with innovation. Stay tuned.
         </p>
       </div>
 
-      <div className='text-center lg:m-7 mt-10 w-80 p-3' >
-        <form className="space-y-6" action="#" method="POST">
+      <div className='mt-10 w-full max-w-md'>
+        <form className="space-y-4" action="#" method="POST">
           <div>
-            <label htmlFor="email" className="block text-slate-800 dark:text-slate-100  font-light text-sm leading-6">Stay Updated</label>
-            <div className="mt-2 flex-col flex lg:flex md:flex-row">
-              <input id="email" name="email" type="email" placeholder='Email address' autoComplete="email" required className="block w-full placeholder:text-gray-500 pl-[10px] focus:outline-none border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mr-0 rounded-none p-2" />
-              <button className='ml-0 bg-slate-900 sm:w-auto border-slate-800 dark:border-slate-100	rounded-none mt-2 md:mt-0	p-2 border-2 dark:text-white hover:bg-slate-950'>Subscribe</button>
+            <label htmlFor="email" className="block text-gray-700 dark:text-gray-200 font-medium text-lg">Stay Updated</label>
+            <div className="mt-1">
+              <input id="email" name="email" type="email" placeholder='Enter your email' autoComplete="email" required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm text-gray-900 dark:text-white focus:ring-indigo-500 focus:border-indigo-500" />
+              <button type="submit" className='mt-3 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-150 ease-in-out'>
+                Subscribe
+              </button>
             </div>
           </div>
         </form>
       </div>
 
-      <footer className='text-slate-500 text-center'>
-        <div className='my-4 text-center' >
-          <ul className='flex flex-wrap lg:flex justify-center '>
-            <li className='px-2'> Connect With Us </li>
-            {socialIcons.map((social, index) => (
-              <li key={index} className='px-2 capitalize border-1  hover:border-b-white'>
-                <a target='_blank' className='' href={social.link}> {social.icon}  </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <p>
-            Copyright © 2023 | A product of &nbsp;<a target="_blank" className="no-underline md:underline" href="https://relix.ai">Relix Co</a>
-          </p>
 
+      <footer className='w-full py-8'>
+        <div className='flex justify-center space-x-6 mb-4'>
+          {socialIcons.map((social, index) => (
+            <a key={index} href={social.link} target='_blank' className='text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-150 ease-in-out'>
+              <span className='sr-only'>{social.icon}</span>
+              <Image src={`/icons/${social.icon}.svg`} alt={social.icon} width={24} height={24} /> {/* Ensure you have these SVGs */}
+            </a>
+          ))}
         </div>
+        <p className='text-center text-sm text-gray-500 dark:text-gray-400'>
+          © 2023 | Relix Co. All rights reserved.
+        </p>
         <ThemeSwitcher />
       </footer>
 
