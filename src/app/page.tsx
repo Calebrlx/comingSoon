@@ -52,8 +52,9 @@ export default function Home() {
 
           <a href="https://www.linkedin.com/in/calebforestal" target='_blank' className='text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-150 ease-in-out'>
             <span className='sr-only'>LinkedIn</span>
-            {/* Replace the src attribute value with the path to your actual SVG image */}
-            <Image src={`/icons/linkedIn.svg`} alt="LinkedIn" width={24} height={24} />
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.719 0-4.923 2.204-4.923 4.923 0 .386.044.762.128 1.124-4.094-.205-7.722-2.166-10.148-5.146-.424.729-.666 1.574-.666 2.476 0 1.709.869 3.213 2.188 4.096-.806-.026-1.566-.247-2.229-.616v.062c0 2.386 1.697 4.374 3.946 4.828-.413.111-.848.171-1.296.171-.314 0-.621-.03-.917-.086.623 1.944 2.432 3.359 4.576 3.4-1.675 1.314-3.786 2.095-6.077 2.095-.394 0-.783-.023-1.17-.067 2.165 1.389 4.73 2.2 7.488 2.2 8.98 0 13.894-7.438 13.894-13.894 0-.211 0-.422-.015-.632.954-.689 1.78-1.55 2.437-2.532z" />
+            </svg>
           </a>
         </div>
 
