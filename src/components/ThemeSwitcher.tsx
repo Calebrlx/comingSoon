@@ -19,18 +19,21 @@ export const ThemeSwitcher = () => {
   }
 
   const currentTheme = theme === "system" ? systemTheme : theme
-  
+
   return (
     <div className="">
-        <button 
-          className="text-slate-500 p-2 bg rounded-full border-slate-50	"
-          onClick={() => { currentTheme === "light" ? setTheme("dark") : setTheme("light") }}>
-          {/* { currentTheme === "light" ? "DARK" : "LIGHT" } */}
-          <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-            <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z" ></path>
-          </svg>
-        </button>
-        {/* {currentTheme === "light" ? (
+      <button
+        className="text-slate-500 p-2 bg rounded-full border-slate-50	"
+        onClick={() => { currentTheme === "light" ? setTheme("dark") : setTheme("light") }}>
+        {/* { currentTheme === "light" ? "DARK" : "LIGHT" } */}
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" fill="white">
+            <animate attributeName="r" from="10" to="10" dur="1s" repeatCount="indefinite" />
+            <animate attributeName="fill" values="white;black;white" dur="1s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </button>
+      {/* {currentTheme === "light" ? (
             <MoonIcon
                 className="size-5 cursor-pointer text-slate-700"
                 onClick={() => {
