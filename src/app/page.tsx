@@ -50,12 +50,13 @@ export default function Home() {
           </a>
 
 
-          <a href="https://www.linkedin.com/in/calebforestal" target='_blank' className='text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-150 ease-in-out'>
+          <a href="https://www.linkedin.com/in/calebforestal" target='_blank' rel="noopener noreferrer" className='text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-150 ease-in-out'>
             <span className='sr-only'>LinkedIn</span>
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.719 0-4.923 2.204-4.923 4.923 0 .386.044.762.128 1.124-4.094-.205-7.722-2.166-10.148-5.146-.424.729-.666 1.574-.666 2.476 0 1.709.869 3.213 2.188 4.096-.806-.026-1.566-.247-2.229-.616v.062c0 2.386 1.697 4.374 3.946 4.828-.413.111-.848.171-1.296.171-.314 0-.621-.03-.917-.086.623 1.944 2.432 3.359 4.576 3.4-1.675 1.314-3.786 2.095-6.077 2.095-.394 0-.783-.023-1.17-.067 2.165 1.389 4.73 2.2 7.488 2.2 8.98 0 13.894-7.438 13.894-13.894 0-.211 0-.422-.015-.632.954-.689 1.78-1.55 2.437-2.532z" />
+              <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5 11.5h-3v-5.5c0-1.38-.56-2.5-1.5-2.5s-1.5 1.12-1.5 2.5v5.5h-3v-10h3v1.5c.46-.85 1.69-2 3.5-2 2.5 0 3.5 1.65 3.5 4.25v6.25z" />
             </svg>
           </a>
+
         </div>
 
         <p className='text-center text-sm text-gray-500 dark:text-gray-400'>
