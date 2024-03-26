@@ -1,7 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from './theme-provider'
-import { ThemeSwitcher } from '../../components/ThemeSwitcher'
 import Head from 'next/head'
 
 const inter = Inter({ 
@@ -27,7 +26,6 @@ export default function RootLayout({
       <body className={ `${inter.className} bg-gray-200	 dark:bg-[#0d1117] `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ThemeSwitcher />
           <main>{children}</main>
         </ThemeProvider>          
       </body>
